@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+
 class TableViewController: UIViewController {
     
     let data = ["First", "Second", "Third", "Another", "More"]
@@ -36,7 +38,9 @@ extension TableViewController: UITableViewDelegate, UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = data[indexPath.row]
         return cell
-        
-        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        <#code#>
     }
 }
