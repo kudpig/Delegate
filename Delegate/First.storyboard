@@ -17,20 +17,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCY-eu-ywP">
-                                <rect key="frame" x="169" y="430" width="86" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCY-eu-ywP">
+                                <rect key="frame" x="107" y="414" width="200" height="70"/>
                                 <color key="backgroundColor" red="0.91372549020000005" green="0.66666666669999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="l5P-KT-8us"/>
+                                    <constraint firstAttribute="height" constant="70" id="zlx-kw-ysq"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="tapGoTable:" destination="2l0-sx-bqz" eventType="touchUpInside" id="NUg-zI-Bcd"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMk-q3-bEF">
+                                <rect key="frame" x="20" y="144" width="374" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="oBL-08-NQY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OzF-yU-KKB"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <constraints>
+                            <constraint firstItem="OzF-yU-KKB" firstAttribute="trailing" secondItem="jMk-q3-bEF" secondAttribute="trailing" constant="20" id="N0s-qH-Ny6"/>
+                            <constraint firstItem="jMk-q3-bEF" firstAttribute="leading" secondItem="OzF-yU-KKB" secondAttribute="leading" constant="20" id="dVh-DB-o0u"/>
+                            <constraint firstItem="jMk-q3-bEF" firstAttribute="centerX" secondItem="nmQ-wX-nd6" secondAttribute="centerX" id="ldn-sI-Xj5"/>
+                            <constraint firstItem="fCY-eu-ywP" firstAttribute="centerX" secondItem="nmQ-wX-nd6" secondAttribute="centerX" id="roS-QL-IkG"/>
+                            <constraint firstItem="jMk-q3-bEF" firstAttribute="top" secondItem="OzF-yU-KKB" secondAttribute="top" constant="100" id="sUG-q3-sRc"/>
+                            <constraint firstItem="fCY-eu-ywP" firstAttribute="top" secondItem="jMk-q3-bEF" secondAttribute="bottom" constant="200" id="tei-QZ-hMw"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="firstLabel" destination="jMk-q3-bEF" id="pv0-la-gpi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bzt-sX-fPB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,10 +8,14 @@
 import UIKit
 
 
+protocol ToPassDataProtocol: class {
+    func didSelect(data: String)
+}
+
 
 class TableViewController: UIViewController {
     
-    let data = ["First", "Second", "Third", "Another", "More"]
+    let dataString = ["First", "Second", "Third", "Another", "More"]
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -23,24 +27,26 @@ class TableViewController: UIViewController {
         tableView.dataSource = self
     }
     
-
-    
+    var delegate: ToPassDataProtocol?
     
 }
 
 
 extension TableViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return dataString.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = data[indexPath.row]
+        cell.textLabel?.text = dataString[indexPath.row]
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
+        
+        let data = dataString[indexPath.row]
+        delegate?.didSelect(data: data)
+        self.navigationController?.popViewController(animated: true)
     }
 }
