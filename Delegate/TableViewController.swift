@@ -8,26 +8,24 @@
 import UIKit
 
 
-protocol ToPassDataProtocol: class {
-    func didSelect(data: String)
-}
+//protocol ToPassDataProtocol: class {
+//    func dataDidSelect(data: String)
+//}
 
 
 class TableViewController: UIViewController {
     
     let dataString = ["First", "Second", "Third", "Another", "More"]
 
-    @IBOutlet weak var tableView: UITableView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        tableView.delegate = self
-        tableView.dataSource = self
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+            tableView.delegate = self
+            tableView.dataSource = self
+        }
     }
     
-    var delegate: ToPassDataProtocol?
+    weak var delegate: ToPassDataProtocol?
     
 }
 
@@ -46,7 +44,7 @@ extension TableViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let data = dataString[indexPath.row]
-        delegate?.didSelect(data: data)
+        delegate?.dataDidSelect(data: data)
         self.navigationController?.popViewController(animated: true)
     }
 }

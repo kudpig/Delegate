@@ -25,6 +25,7 @@ class FirstViewController: UIViewController {
         if let nav = self.navigationController {
             nav.pushViewController(tableVC, animated: true)
         }
+        //Router.showTable(fromVC: self)
     }
     
 
@@ -32,7 +33,7 @@ class FirstViewController: UIViewController {
 
 extension FirstViewController: ToPassDataProtocol {
     
-    func didSelect(data: String) {
+    func dataDidSelect(data: String) {
         print("didselectが実行されました")
         firstLabel.text = data
     }

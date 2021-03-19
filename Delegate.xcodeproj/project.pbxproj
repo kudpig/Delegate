@@ -15,6 +15,7 @@
 		8F1A0DA92600B67F00652BBA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1A0DA82600B67F00652BBA /* Router.swift */; };
 		8F1A0DB32600BDAD00652BBA /* Table.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F1A0DB22600BDAD00652BBA /* Table.storyboard */; };
 		8F1A0DB62600BDBC00652BBA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1A0DB52600BDBC00652BBA /* TableViewController.swift */; };
+		8F1A0DDB2603614D00652BBA /* ToPassDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1A0DDA2603614D00652BBA /* ToPassDataProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8F1A0DA82600B67F00652BBA /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		8F1A0DB22600BDAD00652BBA /* Table.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Table.storyboard; sourceTree = "<group>"; };
 		8F1A0DB52600BDBC00652BBA /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		8F1A0DDA2603614D00652BBA /* ToPassDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToPassDataProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				8F1A0D932600B30300652BBA /* Assets.xcassets */,
 				8F1A0D952600B30300652BBA /* LaunchScreen.storyboard */,
 				8F1A0D982600B30300652BBA /* Info.plist */,
+				8F1A0DDA2603614D00652BBA /* ToPassDataProtocol.swift */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F1A0DDB2603614D00652BBA /* ToPassDataProtocol.swift in Sources */,
 				8F1A0D8B2600B30200652BBA /* AppDelegate.swift in Sources */,
 				8F1A0DA92600B67F00652BBA /* Router.swift in Sources */,
 				8F1A0DA32600B64400652BBA /* FirstViewController.swift in Sources */,
