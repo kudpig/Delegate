@@ -92,6 +92,8 @@
 			dependencies = (
 			);
 			name = Delegate;
+			packageProductDependencies = (
+			);
 			productName = Delegate;
 			productReference = 8F1A0D872600B30200652BBA /* Delegate.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +121,8 @@
 				Base,
 			);
 			mainGroup = 8F1A0D7E2600B30200652BBA;
+			packageReferences = (
+			);
 			productRefGroup = 8F1A0D882600B30200652BBA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -292,6 +296,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Delegate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +315,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Delegate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
